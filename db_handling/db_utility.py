@@ -12,6 +12,7 @@ def create_db_and_tables():
 
 
 def add_record(session: Session, record: SQLModel):
+    # TO DO: add multiple records version
     try:
         session.add(record)
         session.commit()
